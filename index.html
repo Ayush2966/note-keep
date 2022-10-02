@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Keep</title>   
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <h1 class="logo" id="logo">
+            Notes Keep
+        </h1>
+    </nav>
+    <br><br><br>
+
+    <div class="box">
+        <header>
+            <div class="container">
+                <form action="">
+                    <input type="text" id="note-title" placeholder="Note title">
+                    <textarea id="note-text" placeholder="Note Details"></textarea>
+
+                    <button id="add-btn" style="width:25px;">+</button>
+                </form>
+            </div>
+        </header><br>
+
+        <section>
+            <div class="container">
+                <h2>Your Notes</h2><hr>
+                <div id="notes">
+                    <div class="note">
+                        <p class="note-counter">Note ${index + 1}</p>
+                        <h3 class="note-title"> $element.title </h3>
+                        <p class="note-text"> $element.text</p>
+                        <button class="note-btn">Delete Note</button>
+                        <button class="notr-btn edit-btn">Delete Note</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
